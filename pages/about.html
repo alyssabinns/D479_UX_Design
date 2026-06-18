@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Taniti</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><a href="index.html">Taniti Island</a></div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="dining.html">Dining</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="transportation.html">Transportation</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO BANNER -->
+<section class="exp-hero">
+  <div class="exp-hero-inner">
+    <h1 class="exp-hero-title">About The Island</h1>
+    <p class="exp-hero-subtitle">
+      A rich culture, a vibrant landscape, and a welcoming community.
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT CARD -->
+<section class="section">
+  <div class="section-inner">
+
+    <div class="content-card" style="
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: 0 auto;
+    ">
+
+      <div class="two-column" style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: center;
+      ">
+        <img src="islandbanner.png" alt="Taniti landscape" style="
+          width: 100%;
+          border-radius: 10px;
+        ">
+
+        <div>
+          <h2 style="margin-bottom: 16px;">Discover the Heart of Taniti</h2>
+          <p style="margin-bottom: 16px;">
+          Taniti is a small, tropical island in the Pacific. While the island 
+          has an area of less than 500 square miles, the terrain is varied 
+          and includes both sandy and rocky beaches, a small but safe harbor,
+          lush tropical rainforests, and a mountainous interior that includes 
+          a small, active volcano. Taniti has an indigenous population of about 
+          20,000. Until a recent increase in tourism, most the Tanitian economy
+          was dominated by fishing or agriculture.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+
+    <div class="content-card" style="
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: 0 auto;
+    ">
+
+      <h2 style="margin-bottom: 20px;">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Is Taniti safe for visitors?
+        <span class="faq-arrow">▼</span>
+        </h3>
+         
+        <p class="faq-answer">
+          Yes, Taniti is considered very safe, with low crime rates and a welcoming local community.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">What is the best time of year to visit?
+          <span class="faq-arrow">▼</span>
+        </h3>
+        <p class="faq-answer">
+          The island is warm year‑round, but most visitors prefer the dry season from May to October.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">What languages are spoken?
+          <span class="faq-arrow">▼</span>
+        </h3>
+        <p class="faq-answer">
+          Tanitian and English are the most common languages, especially in tourist areas.
+        </p>
+      </div>
+
+            <div class="faq-item">
+        <h3 class="faq-question">Will I need a power adapter to charge my electronics while on the island?
+          <span class="faq-arrow">▼</span>
+        </h3>
+        <p class="faq-answer">
+          No, the island's power outlets are 120 volts (identical to the United States) so your current adapter
+          will work just fine. 
+        </p>
+      </div>
+
+
+      <div class="faq-item">
+        <h3 class="faq-question">How do I get around the island?
+          <span class="faq-arrow">▼</span>
+        </h3>
+        <p class="faq-answer">
+          Visitors typically use shuttles, bikes, walking paths, and boat taxis to explore the island.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Taniti Island</div>
+      <p>
+        A small Pacific island with lush rainforests, clear waters, and a culture that welcomes you like
+        family.
+      </p>
+    </div>
+
+    <div>
+      <h4 style="color:#e5e7eb; margin-bottom:8px;">Explore</h4>
+      <div class="footer-links">
+        <a href="about.html">About Taniti</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="transportation.html">Transportation</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 style="color:#e5e7eb; margin-bottom:8px;">Stay connected</h4>
+      <div class="footer-social">
+        <div class="social-pill">📸 Instagram</div>
+        <div class="social-pill">📘 Facebook</div>
+        <div class="social-pill">▶️ YouTube</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© Taniti Island Tourism</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      const arrow = q.querySelector('.faq-arrow');
+
+      answer.classList.toggle('open');
+      arrow.classList.toggle('rotate');
+    });
+  });
+</script>
+
+</body>
+</html>
+
